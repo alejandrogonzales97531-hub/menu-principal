@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Esencia Amazónica - Sabores de la Selva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        /* Estilos inspirados en la naturaleza vibrante de la selva */
+        body {
+            margin: 0;
+            background-color: #f2f8f5;
+            font-family: 'Quicksand', sans-serif;
+            color: #1a4a1a;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            font-family: 'Lora', serif;
+            font-size: 3.2rem;
+            text-align: center;
+            color: #558b2f; /* Verde oliva vibrante */
+            text-shadow: none;
+            margin-bottom: 2rem;
+            text-transform: capitalize;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid #558b2f;
+            padding-bottom: 0.5rem;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        article.plato {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        article.plato:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        article.plato img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        article.plato img:hover {
+            transform: scale(1.05);
+            filter: saturate(1.2);
+        }
+
+        article.plato h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.7rem;
+            color: #388e3c; /* Verde bosque */
+            text-shadow: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        article.plato p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a6a4a;
+            font-weight: 400;
+            text-align: center;
+            text-shadow: none;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #388e3c;
+            color: #e3f6e3;
+            text-align: center;
+            padding: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            header {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    Esencia de la Selva
+  </header>
+
+  <main>
+    <article class="plato">
+      <img src="SELVA/JUANE.jpg" alt="Juane Tradicional" />
+      <h2>La Joya de la Hoja</h2>
+      <p>Un manjar icónico de la Amazonía. Arroz especiado con cúrcuma y hierbas selváticas, relleno con tierno pollo y envuelto en una hoja de bijao. El sabor de la tradición encapsulado en un paquete natural.</p>
+    </article>
+
+    <article class="plato">
+      <img src="SELVA/PATARASCHA.jpg" alt="Patarashca" />
+      <h2>Pescado de Río Asado</h2>
+      <p>Pescado fresco de las aguas amazónicas, marinado con el jugo de la cocona y ajíes locales. Se envuelve en hojas de bijao y se cocina sobre el fuego, infundiéndolo con un aroma ahumado y un sabor incomparable.</p>
+    </article>
+
+    <article class="plato">
+      <img src="SELVA/MASATO.jpg" alt="Masato" />
+      <h2>Néctar de Yuca</h2>
+      <p>Una bebida ancestral y ceremonial elaborada a base de yuca fermentada. Dulce y con un toque agrio, este elixir tradicional es el acompañamiento perfecto y un verdadero reflejo del espíritu selvático.</p>
+    </article>
+  </main>
+
+  <footer>
+    © 2025 Sabor Auténtico de la Selva - Jose alejandro gonzales quispe
+  </footer>
+
+</body>
+</html>

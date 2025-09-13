@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sabores del Perú - Delicias de la Costa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #f0f2f5;
+      font-family: 'Roboto', sans-serif;
+      color: #2d3748;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #2d3748;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-transform: none;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 1100px;
+      margin: 3rem auto 4rem;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .plato {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plato:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .plato img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1.2rem;
+      object-fit: cover;
+      height: 200px;
+      transition: opacity 0.3s ease;
+    }
+
+    .plato:hover img {
+      opacity: 0.9;
+    }
+
+    .plato h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #3b82f6; /* Azul brillante */
+      letter-spacing: 0.5px;
+    }
+
+    .plato p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #4b5563;
+      font-weight: 400;
+    }
+
+    footer {
+      background-color: #2d3748;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Sabores de la Costa Peruana
+  </header>
+
+  <main>
+    <article class="plato">
+      <img src="COSTA/CEVICHE.jpg" alt="Ceviche Peruano" />
+      <h2>Ceviche Clásico</h2>
+      <p>Una sinfonía de sabores frescos y marinos. Finas láminas de pescado blanco curadas en una explosión cítrica de limón, mezcladas con ají, cebolla y cilantro, creando una armonía de texturas y sensaciones en cada bocado.</p>
+    </article>
+
+    <article class="plato">
+      <img src="COSTA/CAUSA.jpg" alt="Causa Limeña" />
+      <h2>Causa Limeña</h2>
+      <p>Un mosaico de texturas y sabores. Capas suaves de puré de papa amarilla, sazonadas con un toque picante y cítrico, que envuelven un cremoso relleno de pollo con palta, todo un manjar que combina la tierra y la costa.</p>
+    </article>
+
+    <article class="plato">
+      <img src="COSTA/ANTICUCHOS.jpg" alt="Anticuchos Peruanos" />
+      <h2>Anticuchos Tradicionales</h2>
+      <p>Auténticas brochetas de corazón de res, marinadas en una mezcla de especias tradicionales y ají panca. Asadas a fuego lento hasta alcanzar la perfección, se sirven acompañadas de papas doradas y la inconfundible salsa picante, un verdadero clásico.</p>
+    </article>
+  </main>
+
+  <footer>
+    © 2025 Explorando la Gastronomía Peruana
+  </footer>
+
+</body>
+</html>
